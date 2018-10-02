@@ -1,0 +1,45 @@
+/* responsive.css */
+/* Matthew Fiedler */
+
+.software {
+	background-image: url(software.png);
+}
+
+@media screen and (min-width: 1200px) {
+	.software {
+		width: 440px;
+		height: 580px;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+	.software {
+		background-position: -440px 0px;
+		width: 430px;
+		height: 580px;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	.software {
+		background-position: -880px 0px;
+		width: 330px;
+		height: 580px;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+	.software {
+		background-position: 0px -600px;
+		width: 710px;
+		height: 600px;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+	.software {
+		background-position: -710px -600px;
+		width: 485px;
+		height: 600px;
+	}
+}
