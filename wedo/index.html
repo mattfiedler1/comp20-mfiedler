@@ -12,57 +12,56 @@
 
 <video src="https://www.cs.tufts.edu/comp/20/wedo.mp4" id="wedo" controls></video>
 <div id="lyrics"></div>
+<span id="timer"></span>
 
 <script type ="text/javascript">
-		var video = document.getElementById("video");
-		var caption = document.getElementById("captions");
-		var image = document.getElementById("Image");
+		var video = document.getElementById("wedo");
+		var caption = document.getElementById("lyrics");
 		var timer = document.getElementById("timer");
 		video.addEventListener("timeupdate", function() {
-		console.log("Hello Nate!");
 		timer.innerHTML = video.currentTime;
 		
 		if (video.currentTime < 3) {
-			caption.innerHTML ="<h3>We Do (a.k.a., The Stonecutters' Song)</h3>";
+			caption.innerHTML ="<h1>We Do (a.k.a., The Stonecutters' Song)</h1>";
 		}
 		else if (video.currentTime > 3 && video.currentTime < 5.5) {
-			caption.innerHTML = "<h3>Who controls the British crown?</h3>";
+			caption.innerHTML = "<h1>Who controls the British crown?</h1>";
 		}
 		else if (video.currentTime > 5.5 && video.currentTime < 7.5) {
 			caption.innerHTML = "<h1>Who keeps the metric system down?</h1>";
 		}
 		else if (video.currentTime > 7.5 && video.currentTime < 12) {
-			caption.innerHTML = "<h3>We do, we do!</h3>";
+			caption.innerHTML = "<h1>We do, we do!</h1>";
 		}
 		else if (video.currentTime > 12 && video.currentTime < 14) {
 			caption.innerHTML = "<h1>Who keeps Atlantis off the maps?</h1>";
 		}
 		else if (video.currentTime > 14 && video.currentTime < 16.5) {
-			caption.innerHTML = "<h2>Who keeps the Martians under wraps?</h2>";
+			caption.innerHTML = "<h1>Who keeps the Martians under wraps?</h1>";
 		}
 		else if (video.currentTime > 16.5 && video.currentTime < 20.5) {
-			caption.innerHTML = "<h3>We do, we do!</h3>";
+			caption.innerHTML = "<h1>We do, we do!</h1>";
 		}
 		else if (video.currentTime > 20.5 && video.currentTime < 24.5) {
-			caption.innerHTML = "<h2>Who holds back the electric car?</h2>";
+			caption.innerHTML = "<h1>Who holds back the electric car?</h1>";
 		}
 		else if (video.currentTime > 24.5 && video.currentTime < 29) {
 			caption.innerHTML = "<h1>Who makes Steve Guttenberg a star?</h1>";
 		}
 		else if (video.currentTime > 29 && video.currentTime < 33) {
-			caption.innerHTML = "<h3>We do, we do!</h3>";
+			caption.innerHTML = "<h1>We do, we do!</h1>";
 		}
 		else if (video.currentTime > 33 && video.currentTime < 35) {
-			caption.innerHTML = "<h2>Who robs cavefish of their sight?</h2>";
+			caption.innerHTML = "<h1>Who robs cavefish of their sight?</h1>";
 		}
 		else if (video.currentTime > 35 && video.currentTime < 37.5) {
 			caption.innerHTML = "<h1>Who rigs every Oscar night?</h1>";
 		}
 		else if (video.currentTime > 37.5 && video.currentTime < 40.5) {
-			caption.innerHTML = "<h3>We do!</h3>";
+			caption.innerHTML = "<h1>We do!</h1>";
 		}
-		else if (video.currentTime > 40.5 && video.currentTime < 44.5) {
-			caption.innerHTML = "<h2We do!</h2>";
+		else if (video.currentTime > 40.5) {
+			caption.innerHTML = "<h1>We do!</h1>";
 		}
 		else {
 			caption.innerHTML ="";
